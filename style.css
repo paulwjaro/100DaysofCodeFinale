@@ -1,0 +1,48 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #000;
+}
+
+h1 {
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    width: 33%;
+    left: 30%;
+    top: 30%;
+
+
+    background: linear-gradient( 92deg, #95d7e3, #eb76ff );
+    background: -webkit-linear-gradient( 92deg, #95d7e3, #eb76ff );
+    background-size:600vw 600vw;
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimate 5s linear infinite alternate;
+}
+
+#canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+  
+  @keyframes textAnimate {
+    from {
+      filter: hue-rotate(0deg);
+      background-position-x: 0%;
+      
+    }
+    to {
+      filter: hue-rotate(360deg);
+      background-position-x: 600vw;
+      
+    }
+  }
